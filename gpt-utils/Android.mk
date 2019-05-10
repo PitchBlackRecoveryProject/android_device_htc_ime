@@ -11,6 +11,7 @@ else
 LOCAL_HEADER_LIBRARIES := gpt-kernel-headers
 endif
 LOCAL_MODULE := libgptutils
+LOCAL_MODULE_PATH_64 := $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -28,4 +29,5 @@ LOCAL_MODULE := libgptutils
 LOCAL_COPY_HEADERS_TO := gpt-utils/inc
 LOCAL_COPY_HEADERS := gpt-utils.h
 LOCAL_VENDOR_MODULE := true
+LOCAL_MODULE_PATH_64 := $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib64
 include $(BUILD_SHARED_LIBRARY)

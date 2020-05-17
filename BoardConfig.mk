@@ -121,6 +121,7 @@ PLATFORM_SECURITY_PATCH := 2025-12-05
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := device/htc/ime/cryptfs_hw
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_USE_SYSTEM_VOLD := hwservicemanager servicemanager qseecomd keymaster-3-0-qti
 TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor
